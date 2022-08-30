@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Raka.html</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #1A237E, #880E4F);
+        height: 100%;
+      }
+
+      .container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+      }
+
+      .btn-sosmed {
+        display: inline-block;
+        background: #e0e0e0;
+        width: 96px;
+        height: 96px;
+        margin: 8px;
+        border-radius: 18px;
+        box-shadow: 0 6px 16px -6px #000;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .btn-sosmed.btn-facebook {
+        color: #1a237e;
+      }
+
+      .btn-sosmed.btn-instagram {
+        color: #F50057;
+      }
+
+      .btn-sosmed.btn-twitter {
+        color: #0091EA;
+      }
+
+      .btn-sosmed.btn-youtube {
+        color: #D50000;
+      }
+
+      .btn-sosmed.btn-google {
+        color: #304FFE;
+      }
+
+      .btn-sosmed i {
+        line-height: 96px;
+        font-size: 24px;
+        transition: 0.3s linear;
+      }
+
+      .btn-sosmed:hover i {
+        transform: scale(1.2);
+        color: #e0e0e0;
+      }
+
+      .btn-sosmed::before {
+        content: "";
+        position: absolute;
+        width: 105%;
+        height: 150%;
+        transform: rotate(30deg);
+        left: -150%;
+        top: 90%;
+      }
+
+      .btn-sosmed:hover::before {
+        animation: anim 0.6s 1;
+        left: 0;
+        top: -30%;
+      }
+
+      .btn-facebook::before {
+        background: #1a237e;
+      }
+
+      .btn-instagram::before {
+        background: #F50057;
+      }
+
+      .btn-twitter::before {
+        background: #0091EA;
+      }
+
+      .btn-youtube::before {
+        background: #D50000;
+      }
+
+      .btn-google::before {
+        background: #304FFE;
+      }
+
+      @keyframes anim {
+        0% {
+          left: -150%;
+          top: 90%;
+        }
+        50% {
+          left: 15%;
+          top: -30%;
+        }
+        100% {
+          left: 0;
+          top: -30%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+   <center><main class="content">
+          
+          <h1>FOLLOW LAH </h1><br></h2></h2><br><br></center>
+          
+    <div class="container">
+      <a href="" class="btn-sosmed btn-facebook">
+        <i class="fa fa-facebook" raka-hidden="true"></i>
+      </a>
+
+      <a href="https://www.instagram.com/rka_135" class="btn-sosmed btn-instagram">
+        <i class="fa fa-instagram" raka-hidden="true"></i>
+      </a>
+
+      <a href="#" class="btn-sosmed btn-twitter">
+        <i class="fa fa-twitter" raka-hidden="true"></i>
+      </a>
+
+      <a href="https://youtube.com/channel/UCoutxukjIR1FRinAc6DGbSA" class="btn-sosmed btn-youtube">
+        <i class="fa fa-youtube-play" raka-hidden="true"></i>
+      </a>
+
+      </a>
+    </div>
+  </body>
+</html>
